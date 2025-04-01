@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js" rel="scripts"></script>
+</head>
+<body>
+    <section id="container">
+        <h2>A Weather App</h2>
+        <input type="text" id="city" placeholder="Enter city">
+        <button onclick="getWeather()">Search</button>
+
+        <img id="icon" alt="Weather Icon">
+        <div id="temp"></div>
+        <div id="info"></div>
+        <div id="forecast"></div>
+        <button id="viewModal" onclick="modal()">Get today's recipe!</button>
+        <div id="modal" class="hidden">
+            <div>
+                <button id="closeModal" aria-label="close the modal window">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <path d="M10 10l4 4m0 -4l-4 4" />
+                    </svg>
+                </button>
+                <p>Sorry our recipes are behind but you can try it for yourself at out store at 123 W Street Ave! Or check out site.com to buy our quality products.</p>
+                <img width="160px" src="images/AdobeStock_730142414 [Converted]-02.png" alt="coffee cartoon frowning">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
